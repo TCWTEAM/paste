@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Paste | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <center>
+    <h1>Paste | Home</h1>
+    <h4>XO | Twitter @ehxohd | Discord XO#0001</h4>
+    <textarea id="text" />d</textarea>
+    <br />
+    <br />
+    <input type="text" placeholder="Link" id="reee" /><br />
+  <select id="host">
+    <option value="hastebin">
+              Hastebin
+    </option>
+    <option value="ghostbin">
+              Ghostbin
+    </option>
+  </select><br />
+  <input type="button" value="Post" id="execu" onclick="execute();" />
+  </center>
+</body>
+<script>
+require('./app.js')
+</script>
+<script src="app.js"></script>
+<script>
+function execute() {
+  var text = document.getElementById('text').value
+  alert(text)
+    if (document.getElementById('host').value == "hastebin") {
+      var ress = hasteBin(text)
+    } else {
+      var ress = ghostBin(text)
+    }
+
+    return false
+}
+</script>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "paste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "XO",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
